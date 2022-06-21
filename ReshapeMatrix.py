@@ -16,6 +16,7 @@ Approach:
 to the resultant array. 
 Res = [ [row1], [row2] , .... ] 
 '''
+# array = sum(array , []) --> converts a 2D array to a 1D array
 
 
 def matrixReshape(self, mat: List[List[int]], r: int, c: int) -> List[List[int]]:    
