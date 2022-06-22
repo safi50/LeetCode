@@ -51,7 +51,8 @@ A sudoku board can be updated as:
 box4 , box5 , box6
 box7 , box8 , box9 ]
 
-For individual boxes, first, traverse vertically in the board for 3 iterations to get a column for the individual box. This step is repeated 3 times to get a total for 9 elements (3x3) which are then compared for dublicates using a dictionary "box".
+For individual boxes, first, traverse vertically in the board for 3 iterations to get a column for the individual box.
+This step is repeated 3 times to get a total for 9 elements (3x3) which are then compared for dublicates using a dictionary "box".
 When the loop reaches the start of a new box i.e., column 0 , column 3, and column 6, the "box dictionary is reset to zero."
 '''
 
