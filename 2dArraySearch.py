@@ -14,11 +14,11 @@ Output: false
  
 '''
 
-    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        for row in matrix:
-            if row[-1] == target:
+def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+    for row in matrix:
+        if row[-1] == target: # since array is sorted , we check if the last element of an individual array is greater than the target value, 
+            return True       
+        elif row[-1] > target: # if last element of row exists in target, then the target is probably in that row , so we ignore the rest of rows.
+            if target in row: 
                 return True
-            elif row[-1] > target:
-                if target in row:
-                    return True
-                return False
+            return False
