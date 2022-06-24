@@ -11,6 +11,11 @@ Input: s = "rat", t = "car"
 Output: false
 '''
 
+#Fastest Solution
+def isAnagram(self, s: str, t: str) -> bool:   
+    #We check for count of characters in both strings and return true if they are equal else false. 
+    return all(s.count(x) == t.count(x) for x in 'abcdefghijklmnopqrstuvwxzy') # all function returns True or False depending on values
+
 #Hashmap Approach
 # def isAnagram(self, s: str, t: str) -> bool:     
     # count = collections.Counter(s)    #Hashmap for s
