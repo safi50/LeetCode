@@ -12,10 +12,13 @@ Output: true
 '''
 
 
+#Solution 2:  Good Speed
+# def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+	# return collections.Counter(ransomNote) & collections.Counter(magazine) == collections.Counter(ransomNote). #compare Hashmaps and bitwise operation
 
 
 
 #solution 3: Medium Speed 
 # def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-	# return True if collections.Counter(ransomNote) <= collections.Counter(magazine) else False
+	# return True if collections.Counter(ransomNote) <= collections.Counter(magazine) else False #compare Hashmaps 
 
