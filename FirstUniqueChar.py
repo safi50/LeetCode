@@ -11,3 +11,10 @@ Output: 2
 '''
 
 
+#Slowest Solution: 
+#   def firstUniqChar(self, s: str) -> int:
+#   	for char in s:
+#   		indices = [i for i, x in enumerate(s) if x == char]
+#     		if len(indices) == 1:
+#         		return indices[0]
+# 		return -1
