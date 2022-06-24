@@ -10,6 +10,14 @@ Input: s = "loveleetcode"
 Output: 2
 '''
 
+#Fastest Solution --- HASHMAP 
+def firstUniqChar(self, s: str) -> int:
+	count = collections.Counter(s).  #builds a hashmap using the Counter function in collections library. e.g. {a: 4, b: 6 ...}
+	
+	for key, val in enumerate(s):	
+		if count[val] == 1:		#checks the no. of occurances of current element in hashmap -> if one then its the first unique element, so return
+			return key 
+	return -1
 
 
 
