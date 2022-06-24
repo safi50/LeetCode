@@ -10,6 +10,10 @@ Example 2:
 Input: ransomNote = "aa", magazine = "aab"
 Output: true
 '''
+ #Solution 1: Best Speed
+def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+	return all(ransomNote.count(x) <= magazine.count(x) for x in set(ransomNote)) #count occurances of chars in both str from unique chars of ransomNote
+
 
 
 #Solution 2:  Good Speed
