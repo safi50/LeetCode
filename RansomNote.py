@@ -10,3 +10,12 @@ Example 2:
 Input: ransomNote = "aa", magazine = "aab"
 Output: true
 '''
+
+
+
+
+
+#solution 3: Medium Speed 
+# def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+	# return True if collections.Counter(ransomNote) <= collections.Counter(magazine) else False
+
