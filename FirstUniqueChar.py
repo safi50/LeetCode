@@ -11,6 +11,16 @@ Output: 2
 '''
 
 
+
+
+
+#Medium Speed Solution: 
+#         for i in s:
+#             if i not in s[s.index(i)+1:]: #checks if the current element is present in rest of the list, if yes then returns index
+#                 return s.index(i)
+#         return -1
+
+
 #Slowest Solution: 
 #   def firstUniqChar(self, s: str) -> int:
 #   	for char in s:
