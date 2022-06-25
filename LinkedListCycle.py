@@ -35,6 +35,17 @@ class Solution:
         except: #if there is no cycle, Fast will reach end of linked list and on next iteration, it will return an error bcz fast.next.next doesnt exist
             return False
           
+            #Solution 2: Without Try and Except Block
+# class Solution:
+#     def hasCycle(self, head: Optional[ListNode]) -> bool:
+            # slow = fast = head 
+            # while fast and fast.next:
+            #     slow = slow.next
+            #     fast = fast.next.next
+            #     if slow == fast:
+            #         return True
+            # return False
+
           
           
           
