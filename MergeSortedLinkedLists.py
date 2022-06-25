@@ -31,8 +31,8 @@ class Solution:
         #RECURSIVE APPROACH:         
         if list1 == None: return list2
         if list2 == None: return list1
-        if list1.val <= list2.val:
-            list1.next = self.mergeTwoLists(list1.next, list2)
+        if list1.val <= list2.val: #list.val returns the first value in the linked list
+            list1.next = self.mergeTwoLists(list1.next, list2) #if the first value of list1 is <= list2 -> we move recursively to next elements. 
             return list1
         else: 
             list2.next = self.mergeTwoLists(list1, list2.next)
