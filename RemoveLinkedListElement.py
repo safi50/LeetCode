@@ -26,9 +26,9 @@ class Solution:
         while temp is not None: 
             if temp.next is not None and temp.next.val == val: #keep checking if temp is None because if it is , next nodes are also None, so ERROR
                 temp.next = temp.next.next
-            else:
+            else:   #Use Else, without else , the line may execute if temp = null , so it'll generate ERROR
                 temp = temp.next
-        return head
+        return head     #Lastly return the head which contains all the nodes except the val
 
 
 
