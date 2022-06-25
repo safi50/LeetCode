@@ -21,7 +21,7 @@ class ListNode:
         self.next = next
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        while head is not None and  head.val == val: head = head.next
+        while head is not None and  head.val == val: head = head.next #If head is same as value, skip head and head becomes head.next
         temp = head
         while temp is not None:
             if temp.next is not None and temp.next.val == val: 
