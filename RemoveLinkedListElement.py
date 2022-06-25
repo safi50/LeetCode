@@ -23,8 +23,8 @@ class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
         while head is not None and  head.val == val: head = head.next #If head is same as value, skip head and head becomes head.next
         temp = head
-        while temp is not None:
-            if temp.next is not None and temp.next.val == val: 
+        while temp is not None: 
+            if temp.next is not None and temp.next.val == val: #keep checking if temp is None because if it is , next nodes are also None, so ERROR
                 temp.next = temp.next.next
             else:
                 temp = temp.next
