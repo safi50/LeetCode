@@ -21,7 +21,9 @@ Output: []
 	Given Linked List: 1 -> 2 -> 3 -> 4 -> 5
 	Wrong Approach: 5 -> 4 -> 3 -> 2 -> 1 
 	CORRECT Approach:  1 <- 2 <- 3 <- 4 <- 5
+	Note: pointers only go forward so we need a temp variable to store the previous value
 	VIDEO EXPLANATION: https://www.youtube.com/watch?v=XDO6I8jxHtA
+	
 	'''
 									#SOLUTION 1: ITERATIVE - FASTEST 
 	# class ListNode:
