@@ -18,7 +18,7 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         temp = head
         while temp and temp.next:
-            if temp.val == temp.next.val:
+            if temp.val == temp.next.val:   #we use if else for test cases like 1->1->1 where there is more than 1 duplicates
                 temp.next = temp.next.next
             else:
                 temp = temp.next
