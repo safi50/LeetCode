@@ -45,7 +45,7 @@ class MyQueue:
     def peek(self) -> int:
         if self.output == []:   #fill output array in reverse order of input if output is empty
             while self.input:
-                self.output.append(self.input.pop())
+                self.output.append(self.input.pop()) #pop out input array elements in output array in reverse
         return self.output[-1]  #return last element of output which is the first element of input --> FIFO
 
     def empty(self) -> bool:    #Queue is empty if both input and output arrays are empty
