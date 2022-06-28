@@ -48,7 +48,7 @@ class MyQueue:
                 self.output.append(self.input.pop())
         return self.output[-1]  #return last element of output which is the first element of input --> FIFO
 
-    def empty(self) -> bool:
+    def empty(self) -> bool:    #Queue is empty if both input and output arrays are empty
         return False if self.input or self.output else True
         
 
