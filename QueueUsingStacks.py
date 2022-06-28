@@ -39,7 +39,7 @@ class MyQueue:
     def pop(self) -> int:   #if output list is empty, append output list such that 1st element of input is last element of output i.e, easliy removeable
         if self.output == []:
             while self.input:
-                self.output.append(self.input.pop())
+                self.output.append(self.input.pop()) #note: input array elements are popped out, so input array becomes empty
         return self.output.pop()    #after filling output array, remove last element of output i.e., first element of input --> FIFO
         
     def peek(self) -> int:
