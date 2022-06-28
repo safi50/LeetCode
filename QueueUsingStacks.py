@@ -33,7 +33,7 @@ class MyQueue:
     def __init__(self):
         self.input , self.output = [] , []
 
-    def push(self, x: int) -> None:
+    def push(self, x: int) -> None:     #append new element to input array
         self.input.append(x)
         
     def pop(self) -> int:
