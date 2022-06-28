@@ -40,7 +40,7 @@ class MyQueue:
         if self.output == []:
             while self.input:
                 self.output.append(self.input.pop())
-        return self.output.pop()
+        return self.output.pop()    #after filling output array, remove last element of output i.e., first element of input --> FIFO
         
     def peek(self) -> int:
         if self.output == []:
