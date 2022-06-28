@@ -43,10 +43,10 @@ class MyQueue:
         return self.output.pop()    #after filling output array, remove last element of output i.e., first element of input --> FIFO
         
     def peek(self) -> int:
-        if self.output == []:
+        if self.output == []:   #fill output array in reverse order of input if output is empty
             while self.input:
                 self.output.append(self.input.pop())
-        return self.output[-1]
+        return self.output[-1]  #return last element of output which is the first element of input --> FIFO
 
     def empty(self) -> bool:
         return False if self.input or self.output else True
