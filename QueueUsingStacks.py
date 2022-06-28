@@ -36,7 +36,7 @@ class MyQueue:
     def push(self, x: int) -> None:     #append new element to input array
         self.input.append(x)
         
-    def pop(self) -> int:
+    def pop(self) -> int:   #if output list is empty, append output list such that 1st element of input is last element of output i.e, easliy removeable
         if self.output == []:
             while self.input:
                 self.output.append(self.input.pop())
